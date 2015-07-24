@@ -2,8 +2,8 @@
 apply plugin: 'java'
 apply plugin: 'maven'
 
-String mavenGroupId = 'org.beyondrm.engine'
-String mavenVersion = '0.1.0-SNAPSHOT'
+String mavenGroupId = rootProject.group
+String mavenVersion = '0.0.1'
 
 sourceCompatibility = '1.8'
 targetCompatibility = '1.8'
@@ -16,7 +16,7 @@ repositories {
 
 dependencies {
   // Adding dependencies here will add the dependencies to each subproject.
-  testCompile group: 'junit', name: 'junit', version: '4.10'
+  testCompile 'junit:junit:4.10'
 }
 
 String mavenArtifactId = name

@@ -1,2 +1,15 @@
 //
-//include ':brm-engine'
+include\
+':engine',\
+':engine-common',\
+':engine-common-spi',\
+':engine-configuration',\
+':engine-content',\
+':engine-inputs',\
+':engine-system',\
+':engine-system-battling',\
+':engine-system-crafting',\
+':engine-system-questing',\
+':engine-utility-commons',\
+':system-battling-defaults',\
+':system-battling-tactical'
