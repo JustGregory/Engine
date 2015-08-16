@@ -6,7 +6,7 @@ import java.io.IOException;
 
 
 /**
- * <h2>LogicEngineConfig</h2>
+ * The engine configuration-data logic.
  * @author Gregory
  */
 class LogicEngineConfig extends ACryptoLogic {
