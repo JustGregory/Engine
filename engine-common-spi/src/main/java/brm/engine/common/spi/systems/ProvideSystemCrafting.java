@@ -2,8 +2,7 @@ package brm.engine.common.spi.systems;
 
 
 /**
- * <h2>ProvideSystemCrafting</h2>
- * something
+ * A template for providing crafting systems.
  * @author Gregory
  */
 abstract public class ProvideSystemCrafting extends AProvideSystem {
