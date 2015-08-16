@@ -1,8 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package engine.viewable;
 import java.awt.Dimension;
 import java.awt.Graphics2D;
@@ -10,9 +5,9 @@ import java.awt.Window;
 import java.awt.image.BufferStrategy;
 import javax.swing.JFrame;
 
+
 /**
- * <h2>ViewableWindowable</h2>
- * something
+ * The windowed viewable component.
  * @author Gregory
  */
 public class ViewableWindowable extends Viewable {
@@ -41,6 +36,6 @@ public class ViewableWindowable extends Viewable {
 
   @Override
   protected Window getWindow() {
-    return null;
+    return frame;
   }
 }
