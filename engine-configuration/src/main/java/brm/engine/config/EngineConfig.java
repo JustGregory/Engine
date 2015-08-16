@@ -1,6 +1,13 @@
 package brm.engine.config;
 import abc.cryptology.AbcCryptology;
 import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.IOException;
+import java.security.InvalidAlgorithmParameterException;
+import java.security.InvalidKeyException;
+import java.security.NoSuchAlgorithmException;
+import java.security.spec.InvalidKeySpecException;
+import javax.crypto.NoSuchPaddingException;
 
 
 /**
@@ -26,8 +33,15 @@ public class EngineConfig {
    * @param f A {@link File} object, representing an abstract file path name.
    * @param s A {@link String} object, representing the cryptography type.
    * @param t A {@link String} object, representing the cryptographic key.
+   * @throws java.security.NoSuchAlgorithmException
+   * @throws java.security.spec.InvalidKeySpecException
+   * @throws javax.crypto.NoSuchPaddingException
+   * @throws java.security.InvalidKeyException
+   * @throws java.security.InvalidAlgorithmParameterException
+   * @throws java.io.FileNotFoundException
    */
-  public void configLoad(long l, File f, String s, String t) {
+  public void configLoad(long l, File f, String s, String t) throws NoSuchAlgorithmException, InvalidKeySpecException,
+      NoSuchPaddingException, InvalidKeyException, InvalidAlgorithmParameterException, FileNotFoundException, IOException {
     AbcCryptology.instance.performDecryption(l, config, s, f, t);
   }
 
@@ -37,8 +51,15 @@ public class EngineConfig {
    * @param f A {@link File} object, representing an abstract file path name.
    * @param s A {@link String} object, representing the cryptography type.
    * @param t A {@link String} object, representing the cryptographic key.
+   * @throws java.security.NoSuchAlgorithmException
+   * @throws java.security.spec.InvalidKeySpecException
+   * @throws javax.crypto.NoSuchPaddingException
+   * @throws java.security.InvalidKeyException
+   * @throws java.security.InvalidAlgorithmParameterException
+   * @throws java.io.FileNotFoundException
    */
-  public void configSave(long l, File f, String s, String t) {
+  public void configSave(long l, File f, String s, String t) throws NoSuchAlgorithmException, InvalidKeySpecException,
+      NoSuchPaddingException, InvalidKeyException, InvalidAlgorithmParameterException, FileNotFoundException, IOException {
     AbcCryptology.instance.performEncryption(l, config, s, f, t);
   }
 }
