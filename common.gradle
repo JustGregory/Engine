@@ -3,19 +3,26 @@ apply plugin: 'java'
 apply plugin: 'maven'
 
 String mavenGroupId = rootProject.group
-String mavenVersion = '0.0.1'
+String mavenVersion = rootProject.version
 
 sourceCompatibility = '1.8'
 targetCompatibility = '1.8'
 [compileJava, compileTestJava]*.options*.encoding = 'UTF-8'
 
 repositories {
-  mavenLocal();
-  mavenCentral();
+  mavenLocal()
+  mavenCentral()
 }
 
+project.ext.lwjglVersion = "3.0.0a"
+
 dependencies {
-  // Adding dependencies here will add the dependencies to each subproject.
+  compile "org.lwjgl:lwjgl:${lwjglVersion}"
+  compile "org.lwjgl:lwjgl-platform:${lwjglVersion}:natives-windows"
+  compile "org.lwjgl:lwjgl-platform:${lwjglVersion}:natives-linux"
+  compile "org.lwjgl:lwjgl-platform:${lwjglVersion}:natives-osx"
+  compile 'abc.core:abc-cryptology:0.1'
+  compile 'abc.core:abc-errorlogs:0.1'
   testCompile 'junit:junit:4.10'
 }
 
