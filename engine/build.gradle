@@ -1,4 +1,10 @@
 //
-dependencies {
+if(!hasProperty('mainClass')) {
+  ext.mainClass = 'brm.engine.Engine'
 }
 
+dependencies {
+  compile project(':engine-common')
+  compile project(':engine-utility-commons')
+  compile project(':window-view-screen')
+}

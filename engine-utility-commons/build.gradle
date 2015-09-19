@@ -1,4 +1,27 @@
 //
 dependencies {
+  compile 'beyondrm.platform:platform-architecture:0.1'
+  compile 'beyondrm.platform:platform-data-attributes:0.1'
+  compile 'beyondrm.platform:platform-data-characters:0.1'
+  compile 'beyondrm.platform:platform-data-classes:0.1'
+  compile 'beyondrm.platform:platform-data-conditions:0.1'
+  compile 'beyondrm.platform:platform-data-events:0.1'
+  compile 'beyondrm.platform:platform-data-graphics:0.1'
+  compile 'beyondrm.platform:platform-data-items:0.1'
+  compile 'beyondrm.platform:platform-data-mapping:0.1'
+  compile 'beyondrm.platform:platform-data-monsters:0.1'
+  compile 'beyondrm.platform:platform-data-skills:0.1'
+  compile 'beyondrm.platform:platform-data-variables:0.1'
+  compile 'beyondrm.platform:platform-data-vehicles:0.1'
+  compile 'beyondrm.platform:platform-graphics-abstract:0.1'
+  compile 'beyondrm.platform:platform-graphics-animations:0.1'
+  compile 'beyondrm.platform:platform-graphics-balloons:0.1'
+  compile 'beyondrm.platform:platform-graphics-iconsets:0.1'
+  compile 'beyondrm.platform:platform-graphics-tilesets:0.1'
+  compile 'beyondrm.platform:platform-i18nl10n:0.1'
+  compile 'beyondrm.platform:platform-media-sounds:0.1'
+  compile 'beyondrm.platform:platform-screenui:0.1'
+  compile 'beyondrm.platform:platform-system-battling:0.1'
+  compile 'beyondrm.platform:platform-system-crafting:0.1'
+  compile 'beyondrm.platform:platform-system-questing:0.1'
 }
-

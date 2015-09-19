@@ -1,5 +1,4 @@
 //
 dependencies {
-  compile 'abc.core:abc-cryptology:0.1'
   compile project(':engine-utility-commons')
 }

@@ -1,0 +1,1 @@
+  This path is for organization of graphics files, the images used in displaying things in the game.

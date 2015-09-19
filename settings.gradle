@@ -6,10 +6,13 @@ include\
 ':engine-configuration',\
 ':engine-content',\
 ':engine-inputs',\
+':engine-states-core',\
+':engine-states-game',\
 ':engine-system',\
 ':engine-system-battling',\
 ':engine-system-crafting',\
 ':engine-system-questing',\
 ':engine-utility-commons',\
 ':system-battling-defaults',\
-':system-battling-tactical'
+':system-battling-tactical',\
+':window-view-screen'

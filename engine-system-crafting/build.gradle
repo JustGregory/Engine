@@ -1,4 +1,6 @@
 //
 dependencies {
+  compile project(':engine-utility-commons')
+//  compile project(':platform-screenui')
+//  compile project(':platform-system-crafting')
 }
-

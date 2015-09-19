@@ -1,4 +1,6 @@
 //
 dependencies {
+  compile project(':engine-common-spi')
+  compile project(':engine-system')
+  compile project(':engine-system-battling')
 }
-
