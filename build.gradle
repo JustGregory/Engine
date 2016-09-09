@@ -1,10 +1,11 @@
-//
 import org.gradle.api.artifacts.*
 
+apply plugin: 'application'
 apply plugin: 'base' // To add "clean" task to the root project.
 
+mainClassName="abcdefghijklmnopqrstuvwxyz.Engine"
 group = 'beyondrm.engine'
-version = '0.1'
+version = '0.2'
 
 subprojects {
   apply from:rootProject.file('common.gradle')
@@ -24,5 +25,5 @@ task mergedJavadoc(type:Javadoc, description:'Creates Javadoc from all the proje
 }
 
 task wrapper(type:Wrapper, description:'Creates and deploys the Gradle wrapper to the current directory.') {
-  gradleVersion = '2.6'
+  gradleVersion='3.0'
 }

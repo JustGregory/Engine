@@ -1,4 +1,6 @@
 //
+rootProject.name='BeyondRM Engine'
+
 include\
 ':engine',\
 ':engine-common',\

@@ -14,15 +14,11 @@ repositories {
   mavenCentral()
 }
 
-project.ext.lwjglVersion = "3.0.0a"
-
 dependencies {
-  compile "org.lwjgl:lwjgl:${lwjglVersion}"
-  compile "org.lwjgl:lwjgl-platform:${lwjglVersion}:natives-windows"
-  compile "org.lwjgl:lwjgl-platform:${lwjglVersion}:natives-linux"
-  compile "org.lwjgl:lwjgl-platform:${lwjglVersion}:natives-osx"
-  compile 'abc.core:abc-cryptology:0.1'
-  compile 'abc.core:abc-errorlogs:0.1'
+  compile 'abc.core:abc-constraints:0.2'
+  compile 'abc.core:abc-cryptology:0.2'
+  compile 'abc.core:abc-errorlogs:0.2'
+  compile 'beyondrm.platform:platform-architecture:0.2'
   testCompile 'junit:junit:4.10'
 }
 
@@ -31,7 +27,7 @@ String mavenArtifactId = name
 group = mavenGroupId
 version = mavenVersion
 
-task sourcesJar(type: Jar, dependsOn: classes, description: 'Creates a jar from the source files.') {
+task sourcesJar(type:Jar, dependsOn:classes, description:'Creates a jar from the source files.') {
   classifier = 'sources'
   from sourceSets.main.allSource
 }
@@ -49,7 +45,7 @@ configure(install.repositories.mavenInstaller) {
   }
 }
 
-task createFolders(description: 'Creates the source folders if they do not exist.') doLast {
+task createFolders(description:'Creates the source folders if they do not exist.') doLast {
   sourceSets*.allSource*.srcDirs*.each { File srcDir ->
     if (!srcDir.isDirectory()) {
       println "Creating source folder: ${srcDir}"
