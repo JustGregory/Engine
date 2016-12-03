@@ -4,7 +4,7 @@ package brm.engine.common.spi.gamefile.enums;
 /**
  * The game-data type. This enumeration defines how game-save information is processed; at least three methods exist at
  * this time: engine-only data, game-metadata, and in-game data.
- * @author Gregory <gregory.cheyney@gmail.com>
+ * @author Gregory
  * @version 2015/July 30
  */
 public enum GameDataType {
@@ -27,4 +27,7 @@ public enum GameDataType {
    * @see GameDataType
    */
   ingameData;
+
+  private GameDataType() {
+  }
 }

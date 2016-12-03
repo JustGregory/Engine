@@ -9,13 +9,13 @@ import java.lang.annotation.Target;
 
 /**
  * The "game loadable" annotation. This allows defining metadata for a module's handling of the game-load function.
- * <p/>
+ * <p>
  * It is presumed the absence of this annotation on a module project's main class means that no loadable methodology is
  * maintained for the class and its data; the presence of such means that a custom annotation processor at runtime will
  * allow loading of game data.
- * <p/>
+ * <p>
  * Also, where a module defines this annotation, it most likely will also define a {@link GameSaveable} annotation.
- * @author Gregory <gregory.cheyney@gmail.com>
+ * @author Gregory
  * @version 2015/July 25
  * @see #extension() extension()
  * @see #filename() filename()

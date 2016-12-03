@@ -20,8 +20,8 @@ import java.util.ServiceLoader;
  */
 public class EngineServiceHandler {
   /**
-   * The default {@link EngineServiceHandler} instance.
-   * @see #EngineServices
+   * The default instance.
+   * @see EngineServices
    */
   public static final EngineServiceHandler instance;
 

@@ -8,12 +8,12 @@ import java.io.File;
  * <h1>Game File Operations</h1>
  * In an "rpg maker" (generalized), the main file operations that we will allow are as follows:
  * <ol>
- * <li/><b>Loading a game.</b> A game that was previously played and saved can be loaded again. The game is loaded when
+ * <li><b>Loading a game.</b> A game that was previously played and saved can be loaded again. The game is loaded when
  * all of the data is read into memory, and it is ready to be run as a game.
- * <li/><b>Saving a game.</b> A game is saved once all of the data that is required to load it back into the same exact
+ * <li><b>Saving a game.</b> A game is saved once all of the data that is required to load it back into the same exact
  * state as it is in now, is written to a save file. This allows a user to come back to it at a later time, without any
  * lost progress.
- * <li/><b>Quitting a loaded game.</b> A game that is quit will be unloaded from memory but not saved; this is the same
+ * <li><b>Quitting a loaded game.</b> A game that is quit will be unloaded from memory but not saved; this is the same
  * as abandoning an active game session with no intention of going back to it. But, we might still need to perform some
  * activities on the module's data structures in order to make it ready for a new game, if so desired.
  * </ol>
@@ -23,10 +23,10 @@ import java.io.File;
  * individually parse-able. Within the context of this SPI, this allows us to develop individual modules which can save
  * data to a path, and load data again to the same state. But this also means that we must ensure our save-parts have a
  * unique name for each save.
- * <p/>
+ * <p>
  * Further, it is technically possible that a module could exist that <i>does not</i> load or save data; any module who
  * will not load or save, also does not need to provide an implementation of this.
- * <p/>
+ * <p>
  * A note about saving data: in the operation of game data, not every single field or object may need to be saved to be
  * a valid save-file. In the normal operation of a game, a module may use any number of temporary variables to exist at
  * runtime. One example of this is a character or hero: he will have the core statistics that are
@@ -159,7 +159,7 @@ public interface GameFile extends Iterable<GameFile> {
    * in an implementation class. The "theExtension" is the default extension for the save-files; implementations should
    * define their own text label as the file-extension. (BeyondRM will use ".save" for its save files; please choose an
    * original word or abbreviation for saving custom module data...)
-   * <p/>
+   * <p>
    * Further, while the values of the parameters are merely a "suggestion" and based upon practical design, a developer
    * could use another naming methodology; however, the above template code is reasonable to copy and modify, without a
    * real reason to go too far astray from it. The main point is, using the value in the string parameter as the prefix
