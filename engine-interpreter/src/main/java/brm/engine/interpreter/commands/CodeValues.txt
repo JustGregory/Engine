@@ -1,0 +1,138 @@
+These values are gathered from methods in Game_Interpreter.java ... based upon the operational pseudocode.
+
+  ID#  Value Meaning/Purpose    Notation/Commentary
+  ===  =====================    ===================
+  101  Show Text                show a text dialog
+  102  Show Choices             show a choice panel
+  103  Input Number             input a number
+  104  Select Item / Number     select something
+  105  Show Scrolling Text      show a text scroll
+  108  Comment                  a non-processed line for commentary
+
+  111  Conditional Branch       processing of multiple conditions
+  113  Break Loop               break out of branch or loop processing
+  115  Exit Event Processing    quit the current event processing
+  117  Common Event             call an existing common event object
+  118  Label                    label a line as a "jump to label" target
+  119  Jump to Label            go directly to a line label to continue
+
+  121  Control Switches         directly set the value of a boolean switch
+  122  Control Variables        directly set the value of a numeric variable
+  123  Control Self-Switch      directly set the value of a self-switch
+  124  Control Timer            start or stop a timer object
+  125  Change Gold              add the specified gold to party gold
+  126  Change Items             add the specified item to party items
+  127  Change Weapons           add the specified weapon to party items
+  128  Change Armor             add the specified armor to party armor
+  129  Change Party Member      add or remove the specific party character
+
+  132  Change Battle BGM        change the battle background music
+  133  Change Battle End ME     change the battle end music effect
+  134  Change Save Access       control whether save access is possible
+  135  Change Menu Access       control whether menu access is possible
+  136  Change Encounter Disable  control encounter disabling
+  137  Change Formation Access  control the order/formation of heroes
+  138  Change Window Color      change to the specified window color
+
+
+  201  Transfer Player          change the player's location to map x,y
+  202  Set Vehicle Location     position a vehicle instance to a location
+  203  Set Event Location       position an event instance to a location
+  204  Scroll Map               visually scroll to a map location
+  205  Set Move Route           set the event on a movement route
+  206  Get On/Off Vehicle       embark to or disembark from a vehicle
+
+  211  Change Transparency      alter a map entity's alpha-transparency
+  212  Show Animation           show an animation at a map location
+  213  Show Balloon Icon        show a balloon icon above a character/entity
+  214  Temporarily Erase Event  quit this event until next time map loaded
+  216  Change Player Followers  change party members to follow
+  217  Gather Followers         change party members to group
+
+  221  Fadeout Screen           fade screen from scene to black
+  222  Fadein Screen            fade screen from black to scene
+  223  Tint Screen              change the screen tint
+  224  Screen Flash             visually flash the screen
+  225  Screen Shake             visually shake the screen
+
+  230  Wait                     defer operation for the specified time
+  231  Show Picture             show an image on the screen
+  232  Move Picture             move an image on the screen
+  233  Rotate Picture           spin an image by a radial angle
+  234  Tint Picture             change an image's tint
+  235  Erase Picture            remove an image from the scene
+  236  Set Weather              activate a specified weather pattern
+
+  241  Play BGM                 play an audio background music
+  242  Fadeout BGM              fade out of a background music
+  243  Save BGM                 retain a background music and position
+  244  Resume BGM               resume a background music and position
+  245  Play BGS                 play an audio background sound
+  246  Fadeout BGS              fade out of a background sound
+  249  Play ME                  play an audio music effect as a pseudo-BGM
+
+  250  Play SE                  play an audio sound effect for an event
+  251  Stop SE                  stop an audio sound effect
+
+  261  Play Movie               play a video movie
+
+  281  Change Map Name Display  set the map display name to a new text
+  282  Change Tileset           switch a map to use a specified tileset
+  283  Change Battle Back       switch a battle event to a specified image
+  284  Change Parallax Back     switch a parallax background to a specified image
+  285  Get Location Info        get specific map [x,y] properties
+
+
+  301  Battle Processing        initiate a battle session
+  302  Shop Processing          initiate a shopping session
+  303  Name Input Processing    get a name / string via player input
+
+  311  Change HP                change a character's HP value
+  312  Change MP                change a character's MP value
+  313  Change State             change a character's status / state
+  314  Recover All              heal / recover all characters in party
+  315  Change EXP               change a party character's experience points
+  316  Change Level             change a party character's experience level
+  317  Change Parameters        change a character's parameter value
+  318  Change Skills            change a character's skills
+  319  Change Equipment         change a character's equipment
+  320  Change Name              change a character's name
+  321  Change Class             change a character's class (profession)
+  322  Change Actor Graphic     change a character's world-map graphic...?
+  323  Change Vehicle Graphic   change a vehicle's world-map graphic
+  324  Change Nickname          change a character's nickname
+
+  331  Change Enemy HP          change an enemy's HP value
+  332  Change Enemy MP          change an enemy's MP value
+  333  Change Enemy State       change an enemy's status / state
+  334  Enemy Recover All        recover all enemy status
+  335  Enemy Appear             insert an enemy into a battle scene
+  336  Enemy Transform          alter an enemy to a new form
+  337  Show Battle Animation    show a battle animation
+  339  Force Action             "force" a battler to make an action
+  340  Abort Battle             end a battle session immediately
+
+  351  Open Menu Screen         open the menu screen
+  352  Open Save Screen         open the save screen
+  353  Game Over                show the "game over" screen
+  354  Return to Title Screen   go directly to the title screen / menu
+  355  Script                   call a custom scripted event
+
+
+  401  Text Data                in message windows
+  402  When                     branching conditions
+  403  Cancel                   exit branch processing
+  405  ?                        tied to command_105() - add line of text?
+  408  End of Comment?          tied to 108 - add line of comment?
+
+  411  Else                     a catch-all for when the specified branches are invalid
+  412  Loop                     start of a loop
+  413  Repeat Above             loop through a series of operations to 412
+
+
+  601  If Win                   tied to 301 - if battle is won?
+  602  If Escape                tied to 301 - if battle is escaped?
+  603  If Lose                  tied to 301 - if battle is lost?
+  605  ?                        tied to command_302() - add shop item?
+
+  655  ?                        tied to command_355() - add script object?

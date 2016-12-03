@@ -1,0 +1,4 @@
+//
+dependencies {
+  //TODO: Basically, dependencies on all the platform AND engine modules, so that the the interpreter can work...
+}
