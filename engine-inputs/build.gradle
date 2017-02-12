@@ -1,5 +1,0 @@
-//
-dependencies {
-  compile project(':engine-utility-commons')
-//  compile 'beyondrm.archival:platform-screenui:0.2'
-}

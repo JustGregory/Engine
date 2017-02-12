@@ -1,5 +1,0 @@
-//
-dependencies {
-  compile project(':engine-utility-commons')
-  compile project(':window-view-screen')
-}
